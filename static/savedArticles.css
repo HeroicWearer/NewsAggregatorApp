@@ -1,0 +1,78 @@
+/* Main container for the articles section */
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding-right: 10px; 
+    width: 100%;
+}
+
+/* Styling for individual saved article boxes */
+.article-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for the saved articles header */
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Styling for the "Back to Dashboard" link */
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the "Delete" button */
+.button-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Styling for the "Delete" button */
+.delete-button {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+

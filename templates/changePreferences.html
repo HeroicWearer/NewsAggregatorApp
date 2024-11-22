@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Preferences</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='changePreferences.css') }}">
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+    </header>
+    <h2>Change User Preferences</h2>
+
+    <form id="preferences-form">
+        <h3>Select your new preferences (At least 1, at most 3):</h3>
+        <div class="checkbox-container">
+            {% for pref in all_preferences %}
+                <label>
+                    <input type="checkbox" id="preference_{{ pref[0] }}" name="preferences" value="{{ pref[0] }}"
+                        {% if pref[0] in current_preferences %} checked {% endif %}>
+                    {{ pref[1] }}
+                </label>
+            {% endfor %}
+        </div>
+        
+        <button type="submit" class="button-link">Update Preferences</button>
+    </form>
+
+    <a href="/dashboard" class="sign-out-link">Back to Dashboard</a>
+
+    <footer>
+        <p>&copy; 2024 News Aggregator App</p>
+    </footer>
+
+    <!-- Include script.js for handling form submission -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

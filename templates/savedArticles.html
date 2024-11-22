@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Articles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Main styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='savedArticles.css') }}"> <!-- Saved Articles styles -->
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+    </header>
+    <h2>Saved Articles</h2>
+
+    <!-- Articles container where saved articles will be displayed -->
+    <div id="saved-articles" class="article-container"></div>
+
+    <!-- Back to dashboard link -->
+    <a href="/dashboard" class="back-link">Back to Dashboard</a>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <footer>
+        <p>&copy; 2024 News Aggregator App</p>
+    </footer>
+</body>
+</html>
+
+

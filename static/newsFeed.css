@@ -1,0 +1,127 @@
+/* Styling for the article container */
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding-right: 10px; 
+    width: 100%;
+}
+
+/* Styling for each article box */
+.article-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for the article title to allow text wrapping */
+.article-box h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    white-space: normal; 
+    overflow: visible;    
+    word-wrap: break-word; 
+}
+
+/* Styling for the Cached Article and API Fetched labels */
+.api-label, .cached-label {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.api-label {
+    background-color: #ff0000; 
+}
+
+.cached-label {
+    background-color: #28a745;
+}
+
+/* Button styling for Read More and Save Article buttons */
+.button-link, .save-article {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-link:hover, .save-article:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the "Save Article" button to fix its appearance */
+.save-article {
+    background-color: #28a745;
+    margin-left: 10px; 
+}
+
+.save-article:hover {
+    background-color: #218838;
+}
+
+/* Styling for the Preferences section */
+#user-preferences {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+#user-preferences li {
+    margin: 5px 0;
+}
+
+/* Styling for "Your Preferences" title */
+#user-preferences-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the Fetch Articles button */
+#fetch-articles {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fetch-articles:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the Back to Dashboard link */
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

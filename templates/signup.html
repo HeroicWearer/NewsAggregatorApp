@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+    </header>
+
+    <h2>Sign Up</h2>
+    <div id="signup-section">
+
+        <form id="signup-form">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <h3>Select your preferences (At least 1, at most 3):</h3>
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox" id="technology" name="preferences" value="1">
+                    Technology
+                </label>
+                <label>
+                    <input type="checkbox" id="sports" name="preferences" value="2">
+                    Sports
+                </label>
+                <label>
+                    <input type="checkbox" id="business" name="preferences" value="3">
+                    Business
+                </label>
+            </div>
+
+            <button type="submit" class="button-link">Sign Up</button>
+        </form>
+    </div>
+
+    <a href="/main" class="sign-out-link">Back to Main Page</a>
+
+    <footer>
+        <p>&copy; 2024 News Aggregator App</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

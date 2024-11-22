@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Feed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Main styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='newsFeed.css') }}"> <!-- Specific styles for newsFeed -->
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+    </header>
+    <h2>Article News Feed</h2>
+
+    <!-- Preferences section -->
+    <div id="user-preferences-title">Your Preferences:</div>
+    <ul id="user-preferences"></ul>
+
+    <!-- Fetch articles button -->
+    <button id="fetch-articles">Fetch News Articles</button>
+
+    <!-- Articles container where articles will be displayed -->
+    <div id="articles" class="article-container"></div>
+
+    <!-- Back to dashboard link -->
+    <a href="/dashboard" class="back-link">Back to Dashboard</a>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+    <footer>
+        <p>&copy; 2024 News Aggregator App</p>
+    </footer>
+</body>
+</html>
+

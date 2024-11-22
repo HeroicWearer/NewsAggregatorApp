@@ -1,0 +1,26 @@
+/* Center the dashboard container */
+.dashboard-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Separate styling for Sign Out link */
+.sign-out-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.95em;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.sign-out-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+

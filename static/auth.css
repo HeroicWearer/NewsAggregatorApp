@@ -1,0 +1,50 @@
+/* Container styling for sections */
+#index-section, #login-section, #signup-section {
+    max-width: 500px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Center the container vertically */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; 
+    padding-top: 80px; 
+}
+
+/* Input styling */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Styling for button-link class for consistency */
+.button-link {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}

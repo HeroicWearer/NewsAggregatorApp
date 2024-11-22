@@ -1,0 +1,15 @@
+certifi==2024.8.30
+charset-normalizer==2.0.12
+click==8.1.7
+dnspython==2.7.0
+Flask==2.0.3
+idna==3.10
+itsdangerous==2.2.0
+Jinja2==3.1.4
+MarkupSafe==3.0.2
+psycopg2==2.9.10
+pymongo==4.10.1
+python-dotenv==1.0.1
+requests==2.26.0
+urllib3==1.26.20
+Werkzeug==2.2.2
